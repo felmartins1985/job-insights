@@ -42,4 +42,8 @@ def filter_by_industry(jobs: List[Dict], industry: str) -> List[Dict]:
     list
         List of jobs with provided industry
     """
-    raise NotImplementedError
+    list_industries = []
+    for job in jobs:
+        if job["industry"] == industry:
+            list_industries.append(job)
+    return list_industries
