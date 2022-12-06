@@ -44,6 +44,7 @@ def get_unique_job_types(path: str) -> List[str]:
     for job in jobs:
         set_jobs.add(job["job_type"])
     list_jobs = list(set_jobs)
+    
     return list_jobs
 
 
